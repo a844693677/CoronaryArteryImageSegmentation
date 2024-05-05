@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #canvas-container {
+          width: 100%;
+          height: 400px;
+      }
+  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>冠状动脉图像分割系统</title>
+  </head>
+
+  <body>
+    <div class="main-container" id = "content">
+      <div class="welcome">
+        <div class="rectangle">
+            <div class="mainPages" id="previewPage" style="visibility: hidden;">
+              <div class="niftiName">
+                正在预览 <span style=" text-decoration: underline;"id="fileName"></span>
+              </div>
+              <div class="viewports-container">
+                <div class="viewports">
+                  <div id = "viewport-axial" class = "viewport-display">
+
+                  </div>
+                  <div class="viewportDescribe">
+                    水平面
+                  </div>
+                </div>
+                <div class="viewports">
+                  <div id = "viewport-sagittal" class = "viewport-display">
+                  </div>
+                  <div class="viewportDescribe">
+                    矢状面
+                  </div>
+                </div>
+                <div class="viewports">
+                  <div id = "viewport-coronal" class = "viewport-display">
+
+                  </div>
+                  <div class="viewportDescribe">
+                    冠状面
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mainPages" id="welcomePage">
+              <div class = "pageText" id="welcomeText">
+                <span style="font-size: 50%;">
+                  请点击下方按钮上传nifti文件
+                </span>
+              </div>
+              <div class="loading" id = "resultLoading">
+                <svg width="64px" height="48px">
+                    <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+                  <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+                </svg>
+              </div>
+              
+            </div>
+        </div>
+        <div class="banner">
+          <div class="mask-group">
+            <div class="group"></div>
+            <div class="rectangle-1"></div>
+            <form id="upload-form">
+              <input type="file" name="upload" accept=".nii,.nii.gz" id="upload" required />
+              <button class="button-3"type="submit" id="submit"><div class="mask-group-4"></div></button>
+            </form>
+            <button class="button" onclick="upload.click() "><div class="mask-group-2"></div></button>
+          </form>
+          </div>
+        </div>
+        <div class="group-5"></div>
+        <span class="coronary-artery-image-segmentation"
+          >冠状动脉图像分割系统</span>
+        <span class="upload">上传</span>
+        <span class="result-display">模型分割</span>
+      </div>
+    </div>
+  </body>
+</html>

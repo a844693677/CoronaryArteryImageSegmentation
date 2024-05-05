@@ -1,0 +1,335 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1280px;
+  height: 832px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.welcome {
+  position: relative;
+  width: 1200px;
+  height: 808px;
+  margin: 12px 0 0 40px;
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.rectangle {
+  position: relative;
+  width: 1066px;
+  height: 526px;
+  margin: 153px 0 0 75px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  z-index: 9;
+  border-radius: 20px;
+}
+.banner {
+  position: absolute;
+  width: 1200px;
+  height: 873px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.mask-group {
+  position: absolute;
+  width: 1200px;
+  height: 873px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  mask-image: url(./assets/images/5c323668-594e-4621-aa14-cd39c807d3cd.png);
+  mask-size: cover;
+}
+.group {
+  position: relative;
+  width: 1037.374px;
+  height: 1034.708px;
+  margin: -403.943px 0 0 -304.479px;
+  background: url(./assets/images/61b6a7e8-8a59-463b-8aa8-054b22e06046.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+.rectangle-1 {
+  position: absolute;
+  width: 1653.407px;
+  height: 930.042px;
+  top: -4.92px;
+  left: -190px;
+  background: #f3f3fc;
+  z-index: 3;
+}
+.button {
+  position: absolute;
+  width: 191px;
+  height: 72px;
+  top: 705px;
+  left: 337px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 5;
+  border-radius: 23px;
+}
+.mask-group-2 {
+  position: absolute;
+  width: 191px;
+  height: 72px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/d703f876-0139-4910-bac7-fa16738ca4c5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 6;
+  border-radius: 23px;
+}
+.button-3 {
+  position: absolute;
+  width: 281px;
+  height: 72px;
+  top: 705px;
+  left: 585px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 7;
+  border-radius: 23px;
+}
+.mask-group-4 {
+  position: absolute;
+  width: 281px;
+  height: 72px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/29def685-6ee3-4afe-abf5-633398d50ca2.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 8;
+  border-radius: 23px;
+}
+.group-5 {
+  position: absolute;
+  width: 115.452px;
+  height: 70.399px;
+  top: 58px;
+  left: 260px;
+  background: url(./assets/images/c1c6a62e-4123-416f-87b8-daea550f01fb.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 10;
+}
+.coronary-artery-image-segmentation {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 74px;
+  top: 58px;
+  left: 417px;
+  color: #000000;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 54.37730407714844px;
+  font-weight: 800;
+  line-height: 74px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 11;
+}
+.upload {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49px;
+  top: 717px;
+  left: 396px;
+  color: #ffffff;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 12;
+  pointer-events: none;
+}
+.result-display {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49px;
+  top: 717px;
+  left: 657px;
+  color: #ffffff;
+  font-family: Nunito, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 49px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 13;
+  pointer-events: none;
+}
+#upload {
+  top: 740px;
+  left: 360px;
+  position: absolute;
+ 
+}
+.viewports-container{
+    left: 1%;
+    position: relative;
+    top: 15%;
+    height: 75%;
+    width: 98%;
+    display: flex;
+    border-radius: 23px;
+}
+.viewports{
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  height: 100%;
+  width: 90%;
+  background: rgb(229, 233, 255);
+  border-radius: 23px;
+}
+.viewportDescribe{
+  position: relative;
+  text-align: center;
+  font-family: Nunito, var(--default-font-family);
+  color:rgb(83, 83, 83);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  top: 3%
+}
+.niftiName{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 20px;
+  top: 9%;
+  
+
+}
+.viewport-display{
+  border-radius: 23px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  height: 88%;
+  width: 100%;
+  background-color:rgb(85, 85, 85);
+  overflow: hidden;
+}
+.mainPages{
+  position: absolute;
+  width: 1066px;
+  height: 526px;
+  margin: 0 0 0 0;
+  border: 0px;
+  font-family: "Microsoft Yahei UI", var(--default-font-family);
+  color:rgb(81, 84, 104);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 200%
+}
+#previewPage{
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.2,0,0.8,1);
+}
+#previewPage.show{
+  opacity: 1;
+}
+#previewPage.fade{
+  opacity: 0;
+}
+.pageText{
+  width: 100%;
+  text-align: center;
+  position:relative;
+  top: 40%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.pageText.fade{
+  opacity: 0;
+}
+
+.loading{
+  width: 100%;
+  text-align: center;
+  position:absolute;
+  top: 45%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+.loading.show{
+  opacity: 1;
+}
+.loading.fade{
+  opacity: 0;
+}
+
+.loading svg polyline {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+  fill: none;
+  stroke: #ff4d5033;
+}
+
+.loading svg polyline#front {
+  fill: none;
+  stroke: #ff4d4f;
+  stroke-dasharray: 48, 144;
+  stroke-dashoffset: 192;
+  animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+  72.5% {
+    opacity: 0;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+body {
+  user-select: none;
+}
